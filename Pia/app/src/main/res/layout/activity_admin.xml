@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity"
+    android:background="@drawable/mainbackground">
+
+    <ImageView
+        android:id="@+id/kullanıcı_yonet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mevcutsiparis"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:onClick="seeorders"
+
+        />
+
+    <ImageView
+        android:id="@+id/geçmiş_sipariş_gör"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gecmissiparislerigor"
+
+        android:layout_below="@id/kullanıcı_yonet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="gecmissiparisgor"
+
+        />
+
+    <ImageView
+        android:id="@+id/urunleri_yonet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/urunleriyonet"
+
+        android:layout_below="@id/geçmiş_sipariş_gör"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="urunyonet"
+
+        />
+
+    <com.omega_r.libs.OmegaCenterIconButton
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/urunleri_yonet"
+        android:layout_centerHorizontal="true"
+        android:onClick="logout"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttonsred"
+        android:drawableStart="@drawable/logouticon"
+        android:drawingCacheQuality="auto"
+        android:fontFamily="sans-serif-medium"
+        android:text="ÇIKIŞ YAP"
+        android:textAlignment="gravity"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp" />
+
+    <Switch
+        android:id="@+id/restoran_durumu_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESTORAN KAPALI"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+
+        />
+
+</RelativeLayout>

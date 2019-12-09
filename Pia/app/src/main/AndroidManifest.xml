@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.levent.pia">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".DemoApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/pia_manti_icon_true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/pia_manti_icon_true_rounded"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".Urunler.schnitzelhk"></activity>
+        <activity android:name=".Urunler.iclihk" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminPastOrdersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserOrdersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminOldOrdersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PastOrdersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminUserProducts"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminOrdersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConfirmOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfilAyarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MenuFeedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UrunEkle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UrunYonet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UrunCesitSecim"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Urunler.etlihk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Urunler.kilolukurunler"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".uyeol"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".loginscreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".uyegiris"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Urunler.cigborekhk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Urunler.gozlemehk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Urunler.zyaglihk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Urunler.citirhk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Urunler.mantihk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menu"
+            android:screenOrientation="portrait" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB7KZsrwX_RuMCA-TA3ofSRJihyi2_OaMw" />
+
+        <activity
+            android:name=".iletisim"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".hakkimizda"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".welcome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

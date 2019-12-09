@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="15dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/orders_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tel_no_orders"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="Tel No"
+                android:textSize="15dp"
+                android:layout_below="@id/orders_username"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/orders_username"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="İsim"
+                android:textSize="15dp"
+
+                android:layout_alignParentStart="true"
+                android:textAlignment="viewStart"
+
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/orders_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="20₺"
+                android:textSize="25dp"
+                android:layout_marginLeft="50dp"
+                android:gravity="center"
+                android:layout_toRightOf="@id/orders_see_order"
+                android:layout_marginTop="150dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/orders_odeme_şekli"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="Ödeme Şekli"
+                android:textSize="15dp"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="viewEnd"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/orders_not"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_below="@id/orders_odeme_şekli"
+                android:layout_marginTop="10dp"
+                android:text="Not"
+                android:textSize="10dp"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="viewEnd"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/orders_adres"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="viewStart"
+                android:text="Adres"
+                android:textSize="15dp"
+                android:layout_below="@+id/orders_mahalle"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/orders_mahalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="viewStart"
+                android:text="Mahalle"
+                android:textSize="15dp"
+                android:layout_below="@+id/tel_no_orders"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/orders_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="Tarih"
+                android:textSize="15dp"
+                android:layout_below="@+id/orders_adres"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/orders_sipariş_onayla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/orders_see_order"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/orders_date"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:background="@color/md_green_900"
+                android:text="Siparişi Onayla"/>
+
+            <Button
+                android:id="@+id/orders_sipariş_yolda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/orders_see_order"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/orders_date"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:background="@color/md_deep_purple_900"
+                android:text="Yolda"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/orders_sipariş_teslim_edildi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/orders_see_order"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/orders_date"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:text="Teslim Et"
+                android:background="@color/md_purple_900"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/orders_sipariş_teslim_edildi_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orders_adres"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="Sipariş Başarıyla Ulaştırıldı"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/orders_see_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/orders_date"
+                android:text="Sipariş İptal"
+                android:layout_marginTop="20dp"/>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

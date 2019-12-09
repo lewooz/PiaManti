@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UrunCesitSecim"
+    android:background="@drawable/mainbackground">
+
+    <TextView
+        android:id="@+id/sipariş_başlık"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:gravity="center"
+        android:text="PIA MANTI SİPARİŞ PORTALINA HOŞGELDİNİZ"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sipariş_başlık"
+        android:background="@drawable/textbackgroundd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/josefin_sans_semibold"
+        android:gravity="center"
+        android:text="- Aşağıda görülen butona tıklayarak sipariş verme işlemine devam edebilirsiniz. \n\n- İlk siparişinizde ve daha sonra vereceğiniz her 5 siparişte bir %10 indirim siparişinize uygulanır. \n\n- Kiloluk ürün siparişlerini en az bir gün önceden aldığımızı hatırlatmak isteriz.\n\n- Paket servisimiz haftanın 7 günü sabah 10:00 akşam 22:00 saatleri arasında açık olacaktır. \n\n Pia Mantı yönetimi olarak şimdiden afiyet olsun dileklerimizle..."
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/siparisverimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/siparisvericon"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="menugiris"
+
+        />
+
+
+</RelativeLayout>

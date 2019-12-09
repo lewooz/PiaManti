@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilAyarActivity"
+    android:background="@drawable/mainbackground">
+
+    <ImageView
+        android:id="@+id/profil_foto_placeholder"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/profilayar"
+        />
+
+
+
+    <EditText
+        android:id="@+id/isim_user_ayar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profil_foto_placeholder"
+        android:background="@drawable/input_design"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorPrimary"
+        android:hint="İsim/Soyisim"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColorHint="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/tel_no_user_ayar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/isim_user_ayar"
+        android:background="@drawable/input_design"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorPrimary"
+        android:hint="Telefon Numaranız"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColorHint="@color/colorPrimary"
+
+        />
+
+
+    <EditText
+        android:id="@+id/adres_user_ayar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tel_no_user_ayar"
+        android:background="@drawable/input_design"
+        android:inputType="textMultiLine"
+        android:maxLines="4"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:textSize="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/colorPrimary"
+        android:hint="Adres"
+        android:textColorHint="@color/colorPrimary"
+        />
+    <Button
+        android:id="@+id/uyeol_buton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:padding="17dp"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="Üye Bilgilerimi Güncelle"
+        android:textColor="@color/colorPrimaryDark"
+        android:onClick="updateprofile"/>
+
+</RelativeLayout>

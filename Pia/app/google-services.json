@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "70989785075",
+    "firebase_url": "https://pia-manti.firebaseio.com",
+    "project_id": "pia-manti",
+    "storage_bucket": "pia-manti.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70989785075:android:55d6fa5d750bb042",
+        "android_client_info": {
+          "package_name": "com.levent.pia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70989785075-n1tvlfrr5qv0n71dihitor350455c39n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.levent.pia",
+            "certificate_hash": "faba4ce6aecc23a96d08749e38d781d80d88cff1"
+          }
+        },
+        {
+          "client_id": "70989785075-vl9fbqvrv7ciihfedekcsgh6f8boq435.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM9vHnJ2GG92mzX-IZqNk1fznNbZaPcYg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70989785075-vl9fbqvrv7ciihfedekcsgh6f8boq435.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

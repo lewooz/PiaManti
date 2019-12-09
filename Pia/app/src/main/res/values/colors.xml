@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#ff5252</color>
+    <color name="orderApproved">#389228</color>
+    <color name="productbackground">#CACAC8</color>
+    <color name="material_drawer_primary_text">#fff</color>
+    <color name="material_drawer_header_selection_text">#fff</color>
+    <color name="material_drawer_header_selection_subtext">#fff</color>
+    <color name="onesignal_bgimage_notif_title_color">#fff</color>
+    <color name="onesignal_bgimage_notif_body_color">#fff</color>
+    <color name="alert_dialog_loading">#DB9EAF</color>
+</resources>

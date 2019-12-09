@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".welcome"
+    android:background="@drawable/welcome"
+    >
+
+
+    <ImageView
+        android:id="@+id/hakkimizda"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="160dp"
+        android:onClick="hakkimizda" />
+
+    <ImageView
+        android:id="@+id/siparis"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="38dp"
+        android:onClick="siparis" />
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="220dp"
+        android:layout_marginBottom="160dp"
+        android:onClick="menu" />
+
+    <ImageView
+        android:id="@+id/iletisim"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="220dp"
+        android:layout_marginBottom="38dp"
+        android:onClick="iletisim" />
+
+
+
+</RelativeLayout>

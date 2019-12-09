@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbackground">
+
+    <ListView
+        android:id="@+id/orders_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/browser_actions_bg_grey">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/önceki_siparişler_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DAHA ÖNCE SİPARİŞ VERİLMEMİŞ"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:textSize="40dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbackground"
+    tools:context=".iletisim"
+    >
+
+    <TextView
+        android:id="@+id/adres_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cantata_one"
+        android:text="Adres ve Telefon bilgilerimiz"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="216"
+        tools:layout_conversion_wrapWidth="1080" />
+
+    <ImageView
+        android:id="@+id/yer_simge"
+        android:layout_width="46dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/adres_tel"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adres_tel"
+        app:srcCompat="@drawable/adresss"
+        tools:layout_conversion_wrapHeight="116"
+        tools:layout_conversion_wrapWidth="121" />
+
+    <TextView
+        android:id="@+id/adres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adres_tel"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/yer_simge"
+        android:text="Sahrayıcedit Mah. İmam Ramiz Sok. \nDemirli Sitesi Nezirağa Blokları\n No: 6/D Kadıköy/İstanbul"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/yer_simge"
+        app:layout_constraintTop_toBottomOf="@id/adres_tel"
+        tools:layout_conversion_wrapHeight="106"
+        tools:layout_conversion_wrapWidth="1080" />
+
+    <ImageView
+        android:id="@+id/telephone_simge"
+        android:layout_width="46dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/yer_simge"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yer_simge"
+        app:srcCompat="@drawable/telephone"
+        tools:layout_conversion_wrapHeight="116"
+        tools:layout_conversion_wrapWidth="121" />
+
+    <TextView
+        android:id="@+id/sabit_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adres"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/telephone_simge"
+        android:text="0216 360 40 38"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        app:layout_constraintLeft_toRightOf="@+id/telephone_simge"
+        app:layout_constraintTop_toBottomOf="@id/adres"
+        tools:layout_conversion_wrapHeight="90"
+        tools:layout_conversion_wrapWidth="455" />
+
+    <ImageView
+        android:id="@+id/phone_simge"
+        android:layout_width="46dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/telephone_simge"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telephone_simge"
+        app:srcCompat="@drawable/phone"
+        tools:layout_conversion_wrapHeight="116"
+        tools:layout_conversion_wrapWidth="121" />
+
+    <TextView
+        android:id="@+id/cep_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sabit_tel"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_toRightOf="@+id/phone_simge"
+        android:text="0532 684 59 79"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        app:layout_constraintLeft_toRightOf="@+id/phone_simge"
+        app:layout_constraintTop_toBottomOf="@id/sabit_tel"
+        tools:layout_conversion_wrapHeight="90"
+        tools:layout_conversion_wrapWidth="455" />
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cep_tel"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:onClick="facebook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cep_tel"
+        app:srcCompat="@drawable/facebook"
+        tools:layout_conversion_wrapHeight="173"
+        tools:layout_conversion_wrapWidth="163" />
+
+    <ImageView
+        android:id="@+id/instagram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cep_tel"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/facebook"
+        android:onClick="instagram"
+        app:layout_constraintLeft_toRightOf="@+id/facebook"
+        app:layout_constraintTop_toBottomOf="@+id/cep_tel"
+        app:srcCompat="@drawable/instagram"
+        tools:layout_conversion_wrapHeight="173"
+        tools:layout_conversion_wrapWidth="163" />
+
+    <ImageView
+        android:id="@+id/twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cep_tel"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/instagram"
+        android:onClick="twitter"
+        app:layout_constraintLeft_toRightOf="@+id/instagram"
+        app:layout_constraintTop_toBottomOf="@+id/cep_tel"
+        app:srcCompat="@drawable/twitter"
+        tools:layout_conversion_wrapHeight="173"
+        tools:layout_conversion_wrapWidth="163" />
+
+    <ImageView
+        android:id="@+id/trip_advisor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cep_tel"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/twitter"
+        android:onClick="trip"
+        app:layout_constraintLeft_toRightOf="@+id/twitter"
+        app:layout_constraintTop_toBottomOf="@+id/cep_tel"
+        app:srcCompat="@drawable/trip_advisor"
+        tools:layout_conversion_wrapHeight="189"
+        tools:layout_conversion_wrapWidth="226" />
+
+    <LinearLayout
+        android:id="@+id/container_frame_back"
+        android:layout_width="wrap_content"
+        android:layout_height="232dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twitter"
+        app:layout_constraintVertical_bias="0.942"
+        tools:layout_conversion_wrapHeight="688"
+        tools:layout_conversion_wrapWidth="1067">
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pia Mantı</string>
+    <string name="title_activity_urun_yonet">UrunYonet</string>
+    <string name="onesignal_bgimage_notif_image_align">right</string>
+</resources>

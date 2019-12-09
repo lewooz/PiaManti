@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailsActivity"
+    android:background="@drawable/mainbackground">
+
+    <ImageView
+        android:id="@+id/product_image_details"
+        android:layout_width="331dp"
+        android:layout_height="190dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop" />
+    <TextView
+        android:id="@+id/product_name_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_image_details"
+        android:text="ÜRÜN ADI"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/product_description_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name_details"
+        android:text="Ürün Açıklaması"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"/>
+    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+        android:id="@+id/add_drop_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        app:backGroundColor="@color/colorAccent"
+        app:textSize="8dp"
+        app:initialNumber="1"
+        android:gravity="center"
+        android:layout_below="@id/product_description_details"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+    </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+    <TextView
+        android:id="@+id/kiloluk_urun_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_drop_details"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:text="Kiloluk ürün siparişleri en az bir gün önceden alınır. Kiloluk ürününüzün size ulaşmasını istediğiniz gün ve saat bilgisini aşağıdan seçiniz."/>
+    <Button
+        android:id="@+id/tarih_seç_buton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kiloluk_urun_text"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="Tarih seç:"
+        android:background="@drawable/buttons"
+        android:onClick="choosedate"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/tarih_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Soldaki Butondan Tarih Seçiniz"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="#E5DFDE"
+        android:textSize="17dp"
+        android:layout_below="@id/kiloluk_urun_text"
+        android:layout_toRightOf="@id/tarih_seç_buton"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="6dp"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/saat_seç_buton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tarih_seç_buton"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="Saat seç:"
+        android:background="@drawable/buttons"
+        android:onClick="choosetime"
+        android:visibility="gone"
+        />
+
+
+    <TextView
+        android:id="@+id/saat_seç_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Soldaki Butondan Saat Seçiniz"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="#E5DFDE"
+        android:textSize="17dp"
+        android:layout_below="@id/tarih_text"
+        android:layout_toRightOf="@id/tarih_seç_buton"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="6dp"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/product_sarimsak_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_porsiyon_details"
+        android:text="Sarımsak Durumu:"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="8dp"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"/>
+    <org.angmarch.views.NiceSpinner
+        android:id="@+id/sarımsak_spinner"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/product_sarimsak_details"
+        android:layout_below="@id/porsiyon_spinner"
+        app:textTint="@color/colorPrimaryDark"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/product_sos_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_sarimsak_details"
+        android:text="Sos Durumu:"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="8dp"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:visibility="invisible"/>
+    <org.angmarch.views.NiceSpinner
+        android:id="@+id/sos_spinner"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        app:textTint="@color/colorPrimaryDark"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/product_sarimsak_details"
+        android:layout_below="@id/sarımsak_spinner"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/product_porsiyon_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_drop_details"
+        android:text="Porsiyon:"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="8dp"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"/>
+    <org.angmarch.views.NiceSpinner
+        android:id="@+id/porsiyon_spinner"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        app:textTint="@color/colorPrimaryDark"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="78dp"
+        android:layout_toRightOf="@id/product_porsiyon_details"
+        android:layout_below="@id/add_drop_details"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/product_price_details"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/text_view_circle"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="21dp"
+        android:text="56₺"
+        android:textColor="@color/colorPrimary"/>
+    <Button
+        android:id="@+id/add_to_cart_product_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonsred"
+        android:text="SEPETE EKLE"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="addToCart"/>
+
+
+</RelativeLayout>
